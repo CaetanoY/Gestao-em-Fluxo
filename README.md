@@ -1,10 +1,10 @@
 # Gestão em Fluxo
 
-Modelo open source de programação de veículos, com calendário público, solicitações autenticadas, administração e aplicativo Windows. Mantém o design com temas claro e escuro do projeto original.
+**Gestão em Fluxo** é um projeto open source para organizar solicitações, agendamentos e aprovações. Sua primeira aplicação é a programação de veículos, com estrutura que pode ser adaptada para outros processos.
 
-Inclui reservas por horário, dia inteiro ou vários dias; aprovação de pedidos; urgência; gerenciamento de usuários; exportação Excel e PDF semanal; resumo para WhatsApp; API Cloudflare Worker com D1 e aplicativo Electron.
+Inclui calendário público, solicitações com login, painel administrativo e aplicativo Windows, com temas claro e escuro. Permite reservas por horário ou vários dias, indicação de urgência, gerenciamento de usuários, exportação para Excel e PDF e geração de resumos para WhatsApp. Utiliza API Cloudflare Worker com D1 e aplicativo Electron.
 
-Esta distribuição tem base vazia, marca genérica e imagens ilustrativas. Não contém contas, programações, senha administrativa ou configurações da instalação original. Personalize a marca em `web/assets/logo.svg` e os exemplos de veículos/motorista no código.
+Esta versão é distribuída com base vazia, marca genérica e imagens ilustrativas. Cada instalação utiliza suas próprias contas, dados e credenciais. A identidade visual pode ser personalizada em `web/assets/logo.svg`; adaptações para outros recursos e processos exigem ajustes no código.
 
 ## Executar localmente
 
@@ -61,5 +61,10 @@ npm run verify:toolkit
 Crie um novo repositório público e envie somente esta pasta. Mantenha o repositório operacional privado. Não publique `.dev.vars`, `secrets/`, bases locais, dados reais ou arquivos de configuração com credenciais.
 
 Licença MIT: consulte `LICENSE`. As regras ESLint derivam do [vibe-coding-toolkit](https://github.com/soumatheusgomes/vibe-coding-toolkit), também MIT, com sua licença preservada em `eslint-rules/LICENSE`.
+
+## Referências do projeto
+
+- Design: [rtadewald/skills](https://github.com/rtadewald/skills), referência utilizada no ajuste da interface.
+- Organização e qualidade do código: [vibe-coding-toolkit](https://github.com/soumatheusgomes/vibe-coding-toolkit). A licença das regras incorporadas está preservada em `eslint-rules/LICENSE`.
 
 **Idealização e criação do projeto: Gabriel Caetano.**

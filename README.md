@@ -1,6 +1,6 @@
-# Frota Modelo
+# Gestão em Fluxo
 
-Criado por **Gabriel Caetano**. Modelo open source de programação de veículos, com calendário público, solicitações autenticadas, administração e aplicativo Windows. Mantém o design com temas claro e escuro do projeto original.
+Modelo open source de programação de veículos, com calendário público, solicitações autenticadas, administração e aplicativo Windows. Mantém o design com temas claro e escuro do projeto original.
 
 Inclui reservas por horário, dia inteiro ou vários dias; aprovação de pedidos; urgência; gerenciamento de usuários; exportação Excel e PDF semanal; resumo para WhatsApp; API Cloudflare Worker com D1 e aplicativo Electron.
 

@@ -1,0 +1,45 @@
+{
+  "name": "frota-modelo",
+  "version": "0.4.1",
+  "private": true,
+  "description": "Modelo open source de agenda de veículos com web, API e aplicativo Windows",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "node server/local.mjs",
+    "desktop": "electron .",
+    "build:win": "electron-builder --win portable --x64",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
+    "lint": "eslint server desktop web scripts tests eslint.config.mjs",
+    "verify:toolkit": "node scripts/verify-toolkit.mjs ./eslint-rules/index.cjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.0",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "wrangler": "^4.0.0"
+  },
+  "build": {
+    "appId": "org.frotamodelo.desktop",
+    "productName": "Frota Modelo",
+    "asar": true,
+    "files": [
+      "desktop/**",
+      "web/**",
+      "data/seed.json",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "artifactName": "Frota-Modelo-${version}.exe"
+  },
+  "author": "Gabriel Caetano",
+  "license": "MIT"
+}
